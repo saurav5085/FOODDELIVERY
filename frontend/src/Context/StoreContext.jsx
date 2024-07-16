@@ -44,7 +44,7 @@ const StoreContextProvider = (props) => {
     }
     const fetchFoodList = async ()=>
     {
-        const response =await axios.get(url+"/api/food/list");
+        const response =await axios.get("https://fooddelivery-md1g.onrender.com/api/food/list");
         setFoodList(response.data.data)
     }
 
