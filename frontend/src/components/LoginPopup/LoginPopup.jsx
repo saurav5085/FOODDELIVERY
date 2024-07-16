@@ -22,7 +22,7 @@ const LoginPopup = ({setShowLogin}) => {
 
     const onLogin = async(event) =>{
         event.preventDefault()
-        let newUrl =url;
+        let newUrl ="https://fooddelivery-md1g.onrender.com";
         if(currState==="Login"){
             newUrl += "/api/user/login"
         }
