@@ -15,10 +15,10 @@ const Verify= () => {
     const verifyPayment= async ()=>{
         const response =await axios.post(url+"/api/order/verify",{success,orderId});
         if(response.data.success){
-            navigate("/myorders");
+            navigate("https://fooddelivery-frontend.vercel.app/myorders");
         }
         else{
-            navigate("/")
+            navigate("https://fooddelivery-frontend.vercel.app/")
         }
     }
     useEffect(()=>{
