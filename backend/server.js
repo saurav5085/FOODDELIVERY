@@ -109,7 +109,8 @@ app.use(express.json());
 const allowedOrigins = [
   'https://fooddelivery-frontend.vercel.app',
   'https://fooddelivery-frontend-36mb7b0qp-sauravls-projects.vercel.app',
-  'https://fooddelivery-admin-gray.vercel.app'
+  'https://fooddelivery-admin-gray.vercel.app',
+  'https://fooddelivery-frontend-asxezzwug-sauravls-projects.vercel.app'
 ];
 
 app.use(cors({
