@@ -113,7 +113,8 @@ const allowedOrigins = [
   'https://fooddelivery-frontend-oelidu63h-sauravls-projects.vercel.app',
   'https://fooddelivery-frontend-m8643hp0l-sauravls-projects.vercel.app',
   'https://fooddelivery-frontend-al09sli55-sauravls-projects.vercel.app',
-  'https://fooddelivery-frontend-90gmh4xh8-sauravls-projects.vercel.app'
+  'https://fooddelivery-frontend-90gmh4xh8-sauravls-projects.vercel.app',
+  'https://fooddelivery-frontend-git-main-sauravls-projects.vercel.app'
 ];
 
 app.use(cors({
