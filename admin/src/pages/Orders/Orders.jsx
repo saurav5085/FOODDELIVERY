@@ -60,7 +60,7 @@ useEffect(()=>{
               <p className='order-item-phone'>{orders.address.phone}</p>
             </div>
             <p>Items:{orders.items.length}</p>
-            <p>${orders.amount}</p>
+            <p>₹{orders.amount}</p>
             <select onChange={(event)=>statusHandler(event,orders._id)} value={orders.status}>
               <option value="Food Processing">Food Processing</option>
               <option value="Out for Delivery">Out for Delivery</option>
