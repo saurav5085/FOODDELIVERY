@@ -25,7 +25,7 @@ try {
             product_data:{
                 name:item.name
             },
-            unit_amount:item.price
+            unit_amount:item.price*100*80
         },
         quantity:item.quantity
 
@@ -37,7 +37,7 @@ try {
             product_data:{
                 name:"Delivery Charges"
             },
-            unit_amount:20
+            unit_amount:2*100*80
         },
         quantity:1
     })
@@ -45,8 +45,8 @@ try {
     const session =await stripe.checkout.sessions.create({
         line_items:line_items,
         mode:'payment',
-        success_url:`${frontend_url}/verify?success=true&orderId=${newOrder._id}`,
-        cancel_url:`${frontend_url}/verify?success=false&orderId=${newOrder._id}`
+        success_url:${frontend_url}/verify?success=true&orderId=${newOrder._id},
+        cancel_url:${frontend_url}/verify?success=false&orderId=${newOrder._id}
     })
 
     res.json({success:true,session_url:session.url})
@@ -105,4 +105,6 @@ const updateStatus = async (req,res) =>{
     }
 }
 export {placeOrder,verifyOrder,userOrders,listOrders,updateStatus};
+
+
 
