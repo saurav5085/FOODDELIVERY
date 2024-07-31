@@ -133,7 +133,7 @@ const placeOrder = async (req, res) => {
                 product_data: {
                     name: item.name,
                 },
-                unit_amount: item.price * 100, // Ensure price is in the smallest unit
+                unit_amount: item.price , // Ensure price is in the smallest unit
             },
             quantity: item.quantity,
         }));
@@ -144,7 +144,7 @@ const placeOrder = async (req, res) => {
                 product_data: {
                     name: "Delivery Charges",
                 },
-                unit_amount: 200, // Delivery charges
+                unit_amount: 20, // Delivery charges
             },
             quantity: 1,
         });
