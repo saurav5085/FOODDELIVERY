@@ -57,7 +57,8 @@ const Verify = () => {
         try {
             const response = await axios.post(`${url}/api/order/verify`, { success, orderId });
             if (response.data.success) {
-                navigate('/myorders');
+               window.location.href = "https://fooddelivery-frontend-git-main-sauravls-projects.vercel.app/myorders";
+                // navigate('/myorders');
             } else {
                 navigate('/');
             }
