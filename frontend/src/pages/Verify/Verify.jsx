@@ -69,7 +69,7 @@ const Verify = () => {
 
     useEffect(() => {
         verifyPayment();
-    }, [url, success, orderId]); // Added dependencies for better clarity
+    }, [url, success, orderId]); // Ensure correct dependencies
 
     return (
         <div className='verify'>
